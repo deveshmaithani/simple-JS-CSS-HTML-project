@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <style>
+        *{
+           margin:0px;
+           padding:0px;
+        }
+           #buttonone
+           {
+            
+                background-color:green;
+                font-size:20px;
+                font-weight:bold;
+                text-transform:uppercase;
+                line-height:50px;
+                width:150px;
+                font-family:'Montserrat', sans-serif;
+                margin-top:40px;
+                display: block;
+                margin-left:40%;
+               border:3px solid green;
+
+           }
+           #buttontwo
+           {
+            
+                background-color:green;
+                font-size:20px;
+                font-weight:bold;
+                text-transform:uppercase;
+                line-height:50px;
+                width:150px;
+                font-family:'Montserrat', sans-serif;
+                margin-top:-3.5%;
+                display: block;
+                margin-left:55%;
+               border:3px solid green;
+               
+
+           }
+           img
+{
+width:500px;
+height:500px;
+margin-top: 5%;
+border-radius:4px;
+position: relative;
+border-radius: 15px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+</style>
+
+    </head>
+    <body bgcolor="aqua">
+            <script>
+                    function light(value)
+                    {
+                        var pic;
+                        if(value == 0)
+                        {
+                            pic="of.jpeg";
+                        }
+                        else{
+                            pic="on.jpeg";
+                        }
+                        document.getElementById('index').src=pic;
+                    }
+                    </script>   
+    <img  id="index" src="of.jpeg">
+    <br>
+    <button id="buttonone" onclick="light(1)">Turn On</button>
+    <button id="buttontwo" onclick="light(0)">Turn Of</button>
+           
+    </body>
+</html>
